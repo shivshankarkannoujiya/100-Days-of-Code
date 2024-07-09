@@ -75,6 +75,4 @@ int main()
     int ans = search(nums, target);
     cout<<"Ans is : "<<ans<<endl;
 
-    
-
 }
