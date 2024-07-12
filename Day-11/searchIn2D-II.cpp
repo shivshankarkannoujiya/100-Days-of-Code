@@ -5,7 +5,6 @@ using namespace std;
 bool searchMatrix(vector<vector<int>>mat, int target){
     int n = mat.size();
     int m = mat[0].size();
-
     int row = 0;
     int col = m - 1;
 
@@ -34,6 +33,5 @@ int main()
     int target = 14;
     int ans = searchMatrix(mat, target);
     cout<<"Ans is : "<<ans<<endl;
-
 
 }
