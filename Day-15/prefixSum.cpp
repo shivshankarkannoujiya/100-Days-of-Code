@@ -3,10 +3,10 @@
 using namespace std;
 
 
+// Brute Force Approach
 vector<int> prefixSum(vector<int>& nums){
     int n = nums.size();
     vector<int>pf(n);
-
     for(int i = 0; i<n; i++){
         int sum = 0;
         for(int j = 0; j <= i;  j++){
@@ -18,13 +18,16 @@ vector<int> prefixSum(vector<int>& nums){
 }
 
 
+void printArray(vector<int>& nums){
+    for(int i = 0; i<nums.size(); i++){
+        cout<<nums[i]<<" ";
+    }
+}
+
 int main()
 {
     vector<int>nums{4,1,5,-2,7};
-
     vector<int>prefixArray = prefixSum(nums);
-
-    for(int i = 0; i<prefixArray.size(); i++){
-        cout<<prefixArray[i]<<" ";
-    }
+    printArray(prefixArray);
+    
 }
