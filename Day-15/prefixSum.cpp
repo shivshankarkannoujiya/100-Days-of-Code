@@ -17,7 +17,22 @@ vector<int> prefixSum(vector<int>& nums){
     return pf;
 }
 
+vector<int> prefixOptimal(vector<int>& nums){
 
+    int n = nums.size();
+    vector<int>pf(n);
+
+    pf[0] = nums[0];
+
+    for(int i = 1; i<n; i++){
+        pf[i] = pf[i - 1] + nums[i];
+    }
+
+    return pf;
+}
+
+
+// Printing Array
 void printArray(vector<int>& nums){
     for(int i = 0; i<nums.size(); i++){
         cout<<nums[i]<<" ";
@@ -27,7 +42,8 @@ void printArray(vector<int>& nums){
 int main()
 {
     vector<int>nums{4,1,5,-2,7};
-    vector<int>prefixArray = prefixSum(nums);
+    // vector<int>prefixArray = prefixSum(nums);
+    vector<int>prefixArray = prefixOptimal(nums);
     printArray(prefixArray);
     
 }
