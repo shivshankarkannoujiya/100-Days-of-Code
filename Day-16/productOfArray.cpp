@@ -9,7 +9,7 @@ vector<int> productExceptItself(vector<int>& nums){
 
     // get the prefix Product
     prefixProduct[0] = nums[0];
-    for(int i = 1; i<=n; i++){
+    for(int i = 1; i<n; i++){
         prefixProduct[i] = prefixProduct[i - 1] * nums[i];
     }
 
