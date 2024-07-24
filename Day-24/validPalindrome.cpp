@@ -57,7 +57,7 @@ int main()
     {
         cout<<"Valid Palindrome"<<endl;
     }else{
-        cout<<"Not a Valid Palindrome"<<endl;
+        cout<<"Not a Valid Palindrome"<<endl; 
     }
     
 }
