@@ -16,4 +16,5 @@ int main()
     vector<int>arr{10,5,10,1,5,20,20,30,30,1,2};
     int uniqueElement = getUniqueElement(arr);
     cout<<"Unique Eleement is : "<<uniqueElement<<endl;
+    cout<<endl;
 }
