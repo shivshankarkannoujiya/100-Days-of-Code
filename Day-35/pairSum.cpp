@@ -11,6 +11,7 @@ vector<int> twoSumBruteForce(vector<int>& arr, int target){
             {
                 ans.push_back(i);
                 ans.push_back(j);
+                return ans;
             } 
         }
     }
@@ -19,14 +20,10 @@ vector<int> twoSumBruteForce(vector<int>& arr, int target){
 }
 
 
-vector<int> twoSumOptimal(vector<int>& nums, int target){
-    
-}
-
 int main()
 {
     vector<int>arr{2,7,11,15};
-    int target = 9;
+    int target = 17;
     vector<int>ans = twoSumBruteForce(arr,target);
 
     // printing answer
